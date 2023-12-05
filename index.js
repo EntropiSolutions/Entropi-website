@@ -4,19 +4,18 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const path = require("path");
 const app = express();
 
 //preferences
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "Views"));
 app.use(express.static("Public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-mongoose.connect(
-  process.env.MONGO_URI,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 //Schemas
 const newSchema = new mongoose.Schema({
@@ -36,7 +35,7 @@ app.get("/", function (req, res) {
 
 //Post
 app.post("/", async function (req, res) {
-  try{
+  try {
     const user = new Users({
       name: req.body.name,
       email: req.body.email,
@@ -46,10 +45,9 @@ app.post("/", async function (req, res) {
     });
     await user.save();
     res.render("index");
-  }
-  catch (error) {
+  } catch (error) {
     console.error(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 });
 
