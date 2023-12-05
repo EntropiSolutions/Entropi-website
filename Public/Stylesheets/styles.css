@@ -1087,4 +1087,7 @@ footer img {
     .row-form input {
         width: 100%;
     }
+    footer{
+        padding:100px 8vw;
+    }
 }
