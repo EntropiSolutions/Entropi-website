@@ -37,6 +37,10 @@ app.get("/", function (req, res) {
 //Post
 app.post("/", async function (req, res) {
   try {
+    if (!req.body.name || !req.body.email || !req.body.phoneNumber) {
+      return res
+        .status(400);
+    }
     const user = new Users({
       name: req.body.name,
       email: req.body.email,

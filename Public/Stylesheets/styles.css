@@ -24,12 +24,12 @@ header {
     z-index: 0 !important;
 }
 
-
 p {
     font-size: 14px;
     line-height: 1.4;
     font-family: Montserrat;
 }
+
 
 
 /* ------------NAVBAR------------- */
@@ -71,7 +71,7 @@ p {
     text-decoration: none;
     font-family: montserrat;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
 }
 
 .nav>.nav-btn {
@@ -146,7 +146,6 @@ p {
 
 }
 
-
 .underline,
 .underline2 {
     position: relative;
@@ -189,6 +188,8 @@ p {
         width: 100%;
     }
 }
+
+
 
 /* -----------Hero Section---------------- */
 
@@ -277,7 +278,6 @@ h3 {
     text-decoration: none;
 }
 
-
 .btn--changeGradient {
     background: linear-gradient(90deg, #f441a5, #6c5bde, #03a9f4, #f39d2c, #f441a5);
     background-size: 300%;
@@ -299,6 +299,7 @@ h3 {
 
 
 /* ------------------About us-------------------- */
+
 
 *::before,
 *::after {
@@ -441,11 +442,8 @@ h3 {
 /* -------------Industry experience-------------- */
 
 
+
 #Experience {
-    /* background: linear-gradient(30deg, #283593, #4cb2fa); */
-    /* background-image: url(./Assets/bakg.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
     margin-top: 50px;
 }
 
@@ -456,7 +454,11 @@ h3 {
 }
 
 
+
 /* -------------------Industry card collage-------------- */
+
+
+
 .industry-cards-collage {
     display: flex;
     justify-content: center;
@@ -464,13 +466,18 @@ h3 {
 
 
 /* ---------------------Collage part1---------------- */
+
+
 #collage-part1 {
     display: flex;
     flex-direction: column;
     overflow: visible;
 }
 
+
 /* ---------------------Collage part2---------------- */
+
+
 #collage-part2 {
     display: flex;
     flex-direction: column;
@@ -494,7 +501,10 @@ h3 {
     }
 }
 
+
 /* --------------------Industry card------------------- */
+
+
 .industry-card {
     display: flex;
     flex-direction: column;
@@ -508,14 +518,6 @@ h3 {
     border: 1px solid rgba(255, 255, 255, 0.125);
     border-radius: 50px;
     backdrop-filter: blur(11px);
-
-
-    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px); */
 }
 
 .industry-card img {
@@ -527,17 +529,16 @@ h3 {
     font-size: 12px;
     color: rgb(56, 54, 54);
     line-height: 18px;
-    /* color: white; */
 }
 
 .industry-card h4 {
     margin: 0;
-    /* color: white; */
     font-size: larger;
 }
 
 
 /* ---------------Industry right---------------------- */
+
 
 .industry-right {
     display: flex;
@@ -557,7 +558,10 @@ h3 {
     line-height: 1.4;
 }
 
+
 /* ------------------------------------------------------- */
+
+
 @media (max-width:1250px) {
     .wrapper-industry {
         flex-direction: column-reverse;
@@ -575,7 +579,12 @@ h3 {
     }
 }
 
+
+
 /* ----------------------showcase---------------------- */
+
+
+
 .carousal-item1 {
     display: flex;
     padding: 0 16vw;
@@ -602,7 +611,6 @@ h3 {
     flex-direction: column;
     padding: 50px;
 }
-
 
 .car-container p {
     font-size: smaller;
@@ -641,7 +649,6 @@ h3 {
     text-align: center;
 }
 
-
 .container {
     overflow: hidden;
 }
@@ -676,7 +683,6 @@ h3 {
 }
 
 @media (max-width:783px) {
-
     .wrapper3,
     .wrapper4 {
         padding: 0 50px;
@@ -712,6 +718,9 @@ h3 {
 
 
 /* -------------carousel-------------- */
+
+
+
 main {
     height: 500px;
 }
@@ -807,7 +816,6 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* bottom:100px; */
 }
 
 .carousel-buttons button {
@@ -916,7 +924,7 @@ input {
     border-radius: 0.5rem;
     border: none;
     box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
-    max-width: 407px;
+    max-width: 400px;
 }
 
 form {
@@ -991,7 +999,7 @@ footer img {
 }
 
 
-
+/* ---------------media queries--------------- */
 
 
 @media (max-width:600px) {
@@ -1015,7 +1023,6 @@ footer img {
     .hero-section {
         bottom: 8vh;
         margin: auto;
-        /* margin: 0 4vw 0 4vw; */
     }
 
     h1 {
