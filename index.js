@@ -24,6 +24,7 @@ const newSchema = new mongoose.Schema({
   phone: Number,
   company: String,
   website: String,
+  timestamp: { type: Date, default: Date.now },
 });
 
 const Users = mongoose.model("Users", newSchema);
