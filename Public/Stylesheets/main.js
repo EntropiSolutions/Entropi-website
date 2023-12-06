@@ -24,21 +24,21 @@ function moveToSelected(element) {
   $(prevSecond).prevAll().removeClass().addClass("hideLeft");
 }
 
-// $(document).keydown(function (e) {
-//   switch (e.which) {
-//     case 37: // left
-//       moveToSelected("prev");
-//       break;
+$(document).keydown(function (e) {
+  switch (e.which) {
+    case 37: // left
+      moveToSelected("prev");
+      break;
 
-//     case 39: // right
-//       moveToSelected("next");
-//       break;
+    case 39: // right
+      moveToSelected("next");
+      break;
 
-//     default:
-//       return;
-//   }
-//   e.preventDefault();
-// });
+    default:
+      return;
+  }
+  e.preventDefault();
+});
 
 $("#carousel div").click(function () {
   moveToSelected($(this));
@@ -51,4 +51,3 @@ $("#prev").click(function () {
 $("#next").click(function () {
   moveToSelected("next");
 });
-
