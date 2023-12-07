@@ -737,11 +737,14 @@ main {
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
+    background-color: var(--dark-blue);
+    border: 1px solid rgba(0, 0, 0, 0.657);
 }
 
 #carousel div img {
-    width: 400px;
+    width: 600px;
     transition: width 1s;
+    background-color: #000;
 }
 
 #carousel div.hideLeft {
@@ -751,7 +754,7 @@ main {
 }
 
 #carousel div.hideLeft img {
-    width: 200px;
+    width: 300px;
 }
 
 #carousel div.hideRight {
@@ -761,7 +764,7 @@ main {
 }
 
 #carousel div.hideRight img {
-    width: 200px;
+    width: 300px;
 }
 
 #carousel div.prev {
@@ -771,7 +774,7 @@ main {
 }
 
 #carousel div.prev img {
-    width: 300px;
+    width: 400px;
 }
 
 #carousel div.prevLeftSecond {
@@ -782,7 +785,7 @@ main {
 }
 
 #carousel div.prevLeftSecond img {
-    width: 200px;
+    width: 300px;
 }
 
 #carousel div.selected {
@@ -798,7 +801,7 @@ main {
 }
 
 #carousel div.next img {
-    width: 300px;
+    width: 400px;
 }
 
 #carousel div.nextRightSecond {
@@ -809,7 +812,7 @@ main {
 }
 
 #carousel div.nextRightSecond img {
-    width: 200px;
+    width: 300px;
 }
 
 .carousel-buttons {
@@ -826,7 +829,7 @@ main {
     font-size: larger;
 }
 
-@media (max-width:500px) {
+@media (max-width:850px) {
     #carousel {
         overflow: -moz-hidden-unscrollable;
         width: 100%;
@@ -837,20 +840,65 @@ main {
     }
 
     #carousel {
-        height: 300px;
+        height: 400px;
     }
 
     #carousel div img {
-        width: 275px;
+        width: 400px;
         transition: width 1s;
     }
 
     #carousel div.hideLeft img {
-        width: 150px;
+        width: 200px;
     }
 
     #carousel div.hideRight img {
-        width: 150px;
+        width: 200px;
+    }
+
+    #carousel div.prev img {
+        width: 250px;
+    }
+
+    #carousel div.prevLeftSecond img {
+        width: 200px;
+    }
+
+    #carousel div.next img {
+        width: 250px;
+    }
+
+    #carousel div.nextRightSecond img {
+        width: 200px;
+    }
+}
+
+
+@media (max-width:500px) {
+    #carousel {
+        overflow: -moz-hidden-unscrollable;
+        width: 100%;
+    }
+
+    main {
+        height: 350px;
+    }
+
+    #carousel {
+        height: 350px;
+    }
+
+    #carousel div img {
+        width: 300px;
+        transition: width 1s;
+    }
+
+    #carousel div.hideLeft img {
+        width: 125px;
+    }
+
+    #carousel div.hideRight img {
+        width: 125px;
     }
 
     #carousel div.prev img {
@@ -858,7 +906,7 @@ main {
     }
 
     #carousel div.prevLeftSecond img {
-        width: 150px;
+        width: 125px;
     }
 
     #carousel div.next img {
@@ -866,11 +914,33 @@ main {
     }
 
     #carousel div.nextRightSecond img {
-        width: 150px;
+        width: 125px;
+    }
+
+    #carousel div.hideLeft {
+        transform: translateY(50%) translateX(-50%);
+    }
+    
+    #carousel div.hideRight {
+        transform: translateY(50%) translateX(-50%);
+    }
+   
+    #carousel div.prev {
+        transform: translateY(30px) translateX(-50%);
+    }
+    
+    #carousel div.prevLeftSecond {
+        transform: translateY(60%) translateX(-50%);
+    }
+    
+    #carousel div.next {
+        transform: translateY(30px) translateX(-50%);
+    }
+    
+    #carousel div.nextRightSecond {
+        transform: translateY(60%) translateX(-50%);
     }
 }
-
-
 
 /* -------------Contact us------------- */
 
@@ -883,7 +953,6 @@ main {
     display: flex;
     flex-direction: row;
     padding: 100px 0;
-    margin-top: 50px;
 }
 
 #Contact-us .form {
