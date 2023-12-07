@@ -19,10 +19,12 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: 'smtp.porkbun.com',
+  port:587,
+  secure: false,
   auth: {
-    user: "osnishant2210@gmail.com",
-    pass: process.env.MAIL_PASS,
+    user: "info@entropisolutions.io",
+    pass: process.env.MAIL_PASS2,
   },
 });
 //Schemas
@@ -57,7 +59,7 @@ app.post("/", async function (req, res) {
 
     // Send email notification to the owner
     const mailOptions = {
-      from: "nishantmailer7@gmail.com", // replace with your email
+      from: "info@entropisolutions.io", // replace with your email
       to: "info@entropisolutions.io", // replace with owner's email
       subject: "New User Entry",
       text: `A new user wants to reach out to you:\n\nName: ${req.body.name}\nEmail: ${req.body.email}\nPhone Number: ${req.body.phone}\nCompany Name: ${req.body.company}\nCompany Website: ${req.body.website}`,
