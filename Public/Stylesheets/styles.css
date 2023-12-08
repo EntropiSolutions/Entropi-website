@@ -683,6 +683,7 @@ h3 {
 }
 
 @media (max-width:783px) {
+
     .wrapper3,
     .wrapper4 {
         padding: 0 50px;
@@ -920,23 +921,23 @@ main {
     #carousel div.hideLeft {
         transform: translateY(50%) translateX(-50%);
     }
-    
+
     #carousel div.hideRight {
         transform: translateY(50%) translateX(-50%);
     }
-   
+
     #carousel div.prev {
         transform: translateY(30px) translateX(-50%);
     }
-    
+
     #carousel div.prevLeftSecond {
         transform: translateY(60%) translateX(-50%);
     }
-    
+
     #carousel div.next {
         transform: translateY(30px) translateX(-50%);
     }
-    
+
     #carousel div.nextRightSecond {
         transform: translateY(60%) translateX(-50%);
     }
@@ -1164,7 +1165,56 @@ footer img {
     .row-form input {
         width: 100%;
     }
-    footer{
-        padding:100px 8vw;
+
+    footer {
+        padding: 100px 8vw;
     }
+}
+
+
+small {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.testimonials {
+    overflow: hidden;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.testimonials ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.testimonials ul li {
+    display: inline-block;
+    padding: 0 16vw;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+.testimonials img {
+    border-radius: 100%;
+    ;
+    width: 150px;
+}
+
+.testimonials-control {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-control i {
+    cursor: pointer;
+    padding: 1.3rem;
 }
