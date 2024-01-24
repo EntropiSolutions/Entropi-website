@@ -1185,6 +1185,18 @@ footer img {
         line-height: 100%;
     }
 
+    h2, .us h2{
+        font-size: 36px;
+        line-height: 100%;
+    }
+    .us .left p, .industry-right p{
+        font-size: 14px;
+    }
+
+    .commitment-card{
+        text-align: left;
+    }
+    
     #hero-blur h3 {
         line-height: normal;
         margin: 10px 0;
