@@ -743,18 +743,18 @@ h3 {
         width: auto;
     }
 
-    .wrapper2 .bubbles::after,
-    .wrapper2 .bubbles::before {
+    .bubbles::after,
+    .bubbles::before {
         height: 100px;
         width: 100px;
     }
 
-    .wrapper2 .bubbles::before {
+    .bubbles::before {
         left: -20px;
         top: -20px;
     }
 
-    .wrapper2 .bubbles::after {
+    .bubbles::after {
         right: -20px;
         bottom: -20px;
     }
