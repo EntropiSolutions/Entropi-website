@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@500;700&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
@@ -39,7 +40,10 @@
                     <p class="underline">Our Services</p>
                 </a>
                 <a href="#Experience">
-                    <p class="underline">Experience</p>
+                    <p class="underline">Industry Experience</p>
+                </a>
+                <a href="#Experience">
+                    <p class="underline">Our Commitment to You</p>
                 </a>
                 <a href="#Showcase">
                     <p class="underline">Showcase</p>
@@ -54,7 +58,7 @@
                 <div class="left" id="hero-blur">
                     <h3>― Experience The Exclusivity</h3>
                     <h1>Entropi Solutions</h1>
-                    <p>Fueling Success with Precision: Crafting Tailored Tech Solutions for Your Business Growth.</p>
+                    <p>Fueling Success with Intention: Curated Tech Solutions Built by Your Business, for Your Business</p>
                 </div>
                 <div class="left">
                     <a class="btn btn--changeGradient" href="#Contact-us">Get Free Estimation</a>
@@ -65,7 +69,7 @@
 
 
 
-    <section id="Us">
+    <!-- <section id="Us">
         <div class="wrapper2">
             <h2>About Us</h2>
             <div class="bubbles">
@@ -105,9 +109,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-
+    <div class="us">
+        <div class="vision-wrapper">
+            <div class="left">
+                <h2>Custom Technology to <br><strong>Enhance Your Business</strong></h2>
+                <p>We deliver <strong>ground up software solutions </strong>tailored to the specifications of your business needs.<br> Growth should not be hindered by access, and we believe every client deserves the tools to <strong>maximize their success.</strong></p>
+            </div>
+        </div>
+        <img src="Photos/partnership.svg" alt="">
+    </div>
 
     <section id="Services">
         <div class="wrapper3">
@@ -117,7 +129,7 @@
             <!-- card element -->
             <div class="container-item underline2">
                 <img src="/Photos/saas.jpg" />
-                <h4 class="card-heading">SaaS Development</h4>
+                <h4 class="card-heading">Software Development</h4>
                 <p class="card-text">Leveraging our team of seasoned coders, engineers and project managers, we
                     deliver an unparalleled client experience, by understanding the specific industry needs of our
                     partners and tailoring personalized solutions that scale and deliver results.
@@ -137,9 +149,7 @@
             <div class="container-item underline2">
                 <img src="/Photos/softare consulting.jpg" alt="icon" />
                 <h4 class="card-heading">Software Consulting</h4>
-                <p class="card-text">The world of SaaS can be confusing, and that’s what we are here for. We help
-                    our clients navigate the intricacies of the space, and provide proven data backed suggestions
-                    that keep your business growing.
+                <p class="card-text">The world of software solutions can be confusing, and that’s what we are here for. We help our clients navigate the intricacies of the space, and provide proven data backed suggestions that keep your business growing.
                 </p>
             </div>
 
@@ -170,65 +180,69 @@
 
 
     <section id="Experience">
+        <div class="bubbles">
         <div class="wrapper-industry">
-            <div class="industry-cards-collage">
-                <div id="collage-part1">
-                    <div class="industry-card">
-                        <img src="/Photos/8666647_heart_icon.png" alt="">
-                        <h4>Medical Industry</h4>
-                        <p>In the realm of healthcare, Entropi has developed a precise network of systems that
-                            streamline
-                            insurance claims, billables, and payments through intuitive dashboards. We bring innovation
-                            to
-                            healthcare operations, ensuring better accuracy, efficient tracking, and seamless UI/UX.
-                        </p>
-                    </div>
+            <!-- Dropdown -->
+            <ul id="accordion" class="accordion">
+                <li>
+                  <div class="link"><i class="fa-solid fa-heart" style="color: #ee1169;"></i>&nbsp; Medical Industry<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="javascript:void(0);">Our team streamlines insurance claims, billables, and payments through intuitive software. We bring innovation to healthcare operations, ensuring better accuracy, efficient tracking, and seamless user experience.</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="link"><i class="fa-solid fa-industry" style="color: #B197FC;"></i>&nbsp;Industrial<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="javascript:void(0);">We optimize processes, enhance efficiency, and provide real-time insights. From customizing inventory management systems to implementing responsive production dashboards, our tools will help you reach peak performance.
+                    </a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="link"><i class="fa-solid fa-cart-shopping" style="color: #3aa283;"></i>&nbsp;Ecommerce<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="javascript:void(0);">Solutions for online stores, web apps, vendor applications, POS systems, CRM platforms, and more. Leveraging IT technologies, we provide seamless, innovative, and integrated solutions.
+                    </a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="link"><i class="fa-solid fa-shirt" style="color: #0849ba;"></i>&nbsp;Apparel<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="javascript:void(0);">From intuitive inventory management systems to responsive e-commerce platforms, we empower apparel businesses to navigate the intricacies of design, production, and distribution seamlessly.
+                    </a></li>
+                  </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-globe"></i>&nbsp;Real Estate<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                      <li><a href="javascript:void(0);">Leveraging new technologies, our offerings span dynamic property management systems, insightful market analysis dashboards, web scraping platforms, and tailored innovative tools to meet the unique demands of real estate.
 
-                    <div class="industry-card">
-                        <img src="/Photos/cart.png" alt="">
-                        <h4>Ecommerce</h4>
-                        <p>Entropi offers cutting-edge solutions in the form of online stores, e-commerce apps, vendor
-                            applications, POS systems, CRM platforms, and more. Leveraging IT technologies, we assist in
-                            revolutionizing the fast-moving consumer goods industry, providing seamless, innovative, and
-                            integrated solutions. </p>
-                    </div>
-                </div>
-
-                <div id="collage-part2">
-                    <div class="industry-card">
-                        <img src="/Photos/industry.png" alt="">
-                        <h4>Industrial</h4>
-                        <p>We specialize in optimizing processes, enhancing efficiency, and providing real-time
-                            insights.
-                            From customizing inventory management systems to implementing responsive production
-                            dashboards,
-                            our expertise empowers industries to operate at peak performance.</p>
-                    </div>
-
-                    <div class="industry-card">
-                        <img src="/Photos/tshirt.png" alt="">
-                        <h4>Apparel</h4>
-                        <p>Our expertise extends to crafting tailored solutions that address the unique challenges of
-                            this
-                            dynamic sector. From intuitive inventory management systems to responsive e-commerce
-                            platforms,
-                            we empower apparel businesses to navigate the intricacies of design, production, and
-                            distribution seamlessly. </p>
-                    </div>
-                </div>
-            </div>
-
+                      </a></li>
+                    </ul>
+                  </li>
+              </ul>
+            <!-- Industry right -->
             <div class="industry-right">
                 <h2>Industry Experience</h2>
                 <p>At Entropi, our industry experience is a testament to our deep-rooted understanding and proficiency
                     in providing tailored tech solutions and SaaS services. Our journey is marked by successfully
                     navigating diverse industries, each with its own unique challenges and opportunities.
                     <br>
+                    <br>
                     Our portfolio is not just a showcase of projects; it's a narrative of success stories in industries
                     that were perhaps behind the ball in technology adoption. We excel in creating the exact tools
                     needed for success, offering simplicity, efficiency, and speed.
                 </p>
             </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="Commitment">
+        <div class="commitment-card">
+            <h3>Our Commitment to you</h3>
+            <p>We are committed to collaborating with forward-thinking organizations and visionary leaders; leveraging technology as a catalyst for innovation. Our core focus is on design excellence, which allows us to create customized technology solutions that precisely align with your strategic goals. We continually set and exceed benchmarks of success, delivering real-world, measurable impacts that lead our clients towards a future defined by progress, efficiency, and lasting value.
+            </p>
         </div>
     </section>
 
@@ -241,15 +255,15 @@
             <div id="carousel">
 
                 <div class="hideLeft">
-                    <img src="Photos/Untitled design/3.png">
-                </div>
-
-                <div class="prevLeftSecond">
                     <img src="Photos/Untitled design/4.png">
                 </div>
 
-                <div class="prev">
+                <div class="prevLeftSecond">
                     <img src="Photos/Untitled design/2.png">
+                </div>
+
+                <div class="prev">
+                    <img src="Photos/Untitled design/3.png">
                 </div>
 
                 <div class="selected">
@@ -340,7 +354,7 @@
 
     <footer>
         <div class="link-container">
-            <img src="/Photos/xxx.png" />
+            <img id="image" src="/Photos/xxx.png" />
             <p>Entropi is a tech consulting and SaaS development company that focuses on creating tailored solutions to
                 solve complex problems. We provide simple, scalable, client-maximizing solutions that incorporate the
                 latest technologies.</p>
@@ -357,7 +371,8 @@
                     <a href="mailto:info@entropisolutions.io">info@entropisolutions.io</a>
                 </li>
                 <li>
-                    <a href="#">Other media sites (coming later)</a>
+                    <a href="https://www.linkedin.com/company/entropi-solutions/
+                    "><img src="https://cdn-icons-png.flaticon.com/512/38/38669.png" alt="">Linkedin</a>
                 </li>
             </ul>
         </div>
@@ -388,6 +403,8 @@
         </div> -->
     </footer>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="https://kit.fontawesome.com/118aeed2d2.js" crossorigin="anonymous"></script>
     <script src="Stylesheets/main.js"></script>
 
 </body>
