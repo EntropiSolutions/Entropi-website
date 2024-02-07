@@ -1441,3 +1441,14 @@ a {
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
+
+
+.privacy{
+    margin: 50px 16vw;
+}
+.privacy ul{
+    list-style: initial!important;
+}
+.privacy p, ul{
+    font-size: 14px;
+}

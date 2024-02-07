@@ -39,11 +39,16 @@ const newSchema = new mongoose.Schema({
 
 const Users = mongoose.model("Users", newSchema);
 
-//Home page
+//Routes
 app.get("/", function (req, res) {
   res.render("index");
 });
-
+app.get('/privacy', (req, res) => {
+  res.render('privacy');
+});
+app.get('/terms', (req, res) => {
+  res.render('terms');
+});
 //Post
 app.post("/", async function (req, res) {
   try {
