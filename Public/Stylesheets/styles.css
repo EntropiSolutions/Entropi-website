@@ -1452,3 +1452,9 @@ a {
 .privacy p, ul{
     font-size: 14px;
 }
+
+@media(max-width: 783px){
+    .privacy{
+        margin: 50px 8vw;
+    }
+}
