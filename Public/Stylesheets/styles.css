@@ -16,12 +16,19 @@ body {
 }
 
 header {
-    background-image: url("../Photos/ezgif.com-optimize.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     position: relative;
     z-index: 0 !important;
+}
+
+header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 p {
@@ -299,56 +306,67 @@ h3 {
 
 
 /* ------------------About us-------------------- */
-.us img{
-   height: 450px;
+.us img {
+    height: 450px;
 }
-.us{
-    background-color:#F6FAFE;
+
+.us {
+    background-color: #F6FAFE;
     display: flex;
     flex-direction: row;
     text-align: left;
     margin: 0;
     padding: 100px 16vw;
     justify-content: space-between;
-    gap:50px;
+    gap: 50px;
     align-items: center;
 }
-.us h2{
+
+.us h2 {
     text-align: left;
     line-height: 1.1;
     font-size: 42pt;
 }
-.us .left{
-    max-width: 30vw;   
+
+.us .left {
+    max-width: 30vw;
 }
-.us .left p{
+
+.us .left p {
     font-size: 16px;
 }
-@media (max-width:1150px){
-    .us{
+
+@media (max-width:1150px) {
+    .us {
         flex-direction: column;
         text-align: center;
     }
-    .us h2{
+
+    .us h2 {
         text-align: center;
         font-size: 38pt;
     }
-    .us img{
+
+    .us img {
         width: 70vw;
     }
-    .us .left{
+
+    .us .left {
         max-width: none;
     }
 }
-@media(max-width: 500px){
-    .wrapper-industry{
+
+@media(max-width: 500px) {
+    .wrapper-industry {
         background-color: white;
     }
-    .us{
+
+    .us {
         padding: 50px 8vw;
-        gap:0px;
+        gap: 0px;
     }
 }
+
 /* 
 *::before,
 *::after {
@@ -365,7 +383,7 @@ h3 {
 }
 
 .bubbles::before,
- .bubbles::after {
+.bubbles::after {
     content: "";
     position: absolute;
     width: 150px;
@@ -388,6 +406,7 @@ h3 {
     background-color: #23e9c8;
     background-image: linear-gradient(315deg, #23e9c8 0%, #35b6d0 74%);
 }
+
 /* 
 .wrapper2 .container {
     position: relative;
@@ -618,14 +637,15 @@ h3 {
 
 
 
-#Commitment{
+#Commitment {
     background-image: url("../Photos/office-meeting.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
-    padding:16vw;
+    background-size: cover;
+    padding: 16vw;
     /* height:100px; */
 }
-.commitment-card{
+
+.commitment-card {
     max-width: 460px;
     border-radius: 12px;
     text-align: justify;
@@ -655,9 +675,7 @@ h3 {
     }
 }
 
-@media (max-width: 540px){
-   
-}
+@media (max-width: 540px) {}
 
 /* ----------------------showcase---------------------- */
 
@@ -799,9 +817,10 @@ h3 {
 /* -------------carousel-------------- */
 
 
-#Showcase{
+#Showcase {
     margin-top: 100px;
 }
+
 main {
     height: 500px;
 }
@@ -1074,7 +1093,7 @@ input {
     border-radius: 0.5rem;
     border: none;
     box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
 form {
@@ -1083,12 +1102,17 @@ form {
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
+    max-width: 400px;
 }
 
 .row-form {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.row-form input {
+    flex: 1;
 }
 
 @media (max-width: 725px) {
@@ -1185,18 +1209,21 @@ footer img {
         line-height: 100%;
     }
 
-    h2, .us h2{
+    h2,
+    .us h2 {
         font-size: 36px;
         line-height: 100%;
     }
-    .us .left p, .industry-right p{
+
+    .us .left p,
+    .industry-right p {
         font-size: 14px;
     }
 
-    .commitment-card{
+    .commitment-card {
         text-align: left;
     }
-    
+
     #hero-blur h3 {
         line-height: normal;
         margin: 10px 0;
@@ -1335,11 +1362,13 @@ a {
     max-width: 360px;
     padding-inline-start: 0;
 }
-@media(max-width: 480px){
-    .accordion{
+
+@media(max-width: 480px) {
+    .accordion {
         min-width: 300px;
     }
 }
+
 .accordion .link {
     cursor: pointer;
     display: block;
@@ -1351,7 +1380,7 @@ a {
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    
+
 }
 
 .accordion li:last-child .link {
@@ -1380,7 +1409,7 @@ a {
     position: absolute;
     top: 16px;
     left: 12px;
-    height:24px;
+    height: 24px;
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -1422,7 +1451,7 @@ a {
 
 .submenu {
     padding-left: 0;
-    padding-inline-start: 0!important;
+    padding-inline-start: 0 !important;
 }
 
 .submenu li {
@@ -1443,18 +1472,21 @@ a {
 }
 
 
-.privacy{
+.privacy {
     margin: 50px 16vw;
 }
-.privacy ul{
-    list-style: initial!important;
+
+.privacy ul {
+    list-style: initial !important;
 }
-.privacy p, ul{
+
+.privacy p,
+ul {
     font-size: 14px;
 }
 
-@media(max-width: 783px){
-    .privacy{
+@media(max-width: 783px) {
+    .privacy {
         margin: 50px 8vw;
     }
 }

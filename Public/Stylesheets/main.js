@@ -146,7 +146,3 @@ greyButton();
 if ( tItemCount == 1 ) {
   $('.testimonials-control').css('display','none');
 }
-
-
-
-
